@@ -313,12 +313,42 @@
     Leave your contacts and we will call you back
     </p>
     <form>
-        <label for="username"  class="modal-label">Name</label>
-        <input class="modal-input" type="text" name="username" id="username"/>
-        <label for="usertel"  class="modal-label">Phone</label>
-        <input class="modal-input" type="tel" name="usertel" id="usertel"/>
-        <label for="usermail"  class="modal-label">Email</label>
-        <input class="modal-input" type="email" name="usermail" id="usermail"/>
+        <div class="modal-box">
+            <label for="username"  class="modal-label">Name</label>
+            <div class="modal-input-box">
+                <input class="modal-input" type="text" name="username" id="username"/>
+                <svg class="modal-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="modal-box">
+            <label for="usertel"  class="modal-label">Phone</label>
+            <div class="modal-input-box">
+                <input class="modal-input" type="tel" name="usertel" id="usertel"/>
+                <svg class="modal-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="modal-box">
+            <label for="usermail" class="modal-label">Email</label>
+            <div class="modal-input-box">
+                <input class="modal-input" type="email" name="usermail" id="usermail"/>
+                <svg class="modal-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="modal-box">
+            <label for="usertext" class="modal-label">Comment</label>
+            <textarea name="usertext" id="usertext" class="modal-textarea" placeholder="Text input"
+            ></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="userterms" id="userterms">
+            <label for="userterms" class="check-text">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+        </div>
         <button type="submit" class="modal-send-btn">Send</button>
     </form>
     </div>
