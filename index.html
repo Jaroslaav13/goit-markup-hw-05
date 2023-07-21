@@ -300,10 +300,23 @@
                 </li>
             </ul>       
         </div>
+        <div class="footer-box">
+            <p class="footer-box-title">Subscribe</p>
+            <form class="footer-subscription">
+                <label>
+                    <input type="email" name="footer-email" class="input-footer" placeholder="E-mail" />
+                </label>
+             <button type="submit" class="footer-button">Subscribe
+                <svg width="24" height="20">
+                    <use href="./images/icons.svg#icon-frame"></use>
+                </svg>
+            </button>
+            </form>
+        </div>
     </div>
    </footer> 
    <!-- MODAL-WINDOW -->
-   <div class="backdrop " data-modal>
+   <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="close-icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use>
@@ -346,8 +359,10 @@
             ></textarea>
         </div>
         <div>
-            <input type="checkbox" name="userterms" id="userterms">
-            <label for="userterms" class="check-text">I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+            <input type="checkbox" name="userterms" id="userterms" class="input-check visually-hidden">
+            <label for="userterms" class="check-text"><span class="checkbox"><svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+            </svg></span> I accept the terms and conditions of the <a href="" class="check-text-link">Privacy Policy</a></label>
         </div>
         <button type="submit" class="modal-send-btn">Send</button>
     </form>
